@@ -7,9 +7,9 @@ To trigger bug:
 - play and stop the file 4 times
 - drag and drop will stop working in the QListWidget
 
-To build, modify the CMakeLists.txt file and modify the gstreamer paths to match your gstreamer install path
+To build, modify the CMakeLists.txt file and modify the gstreamer paths to match your gstreamer install path.  If you have gstreamer installed in the default location (C:\gstreamer\) and you're using 1.18.3, you won't need to modify the paths.
 
-To have cmake automatically run windeployqt and copy the necessary gstreamer dlls into your build output directory, add -DDEPLOY_DEPS to your cmake command line
+To have cmake automatically run windeployqt and copy the necessary gstreamer dlls into your build output directory so you can run it from there after build, add -DDEPLOY_DEPS to your cmake command line
 
 Here's the exception it's throwing:
 ```
